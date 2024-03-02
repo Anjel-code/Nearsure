@@ -126,9 +126,10 @@ body {
 .navbar__link_option {
     width: 200px;
     padding: 15px;
-    border-bottom: 1px solid #050505;
+    border-bottom: 1px solid #1d1b1b;
     box-sizing: border-box;
     transition: background-color 0.4s ease-in-out;
+    cursor: pointer;
 }
 
 .navbar__link_option:first-child {
@@ -136,7 +137,7 @@ body {
 }
 
 .navbar__link_option:hover {
-    background-color: #050505;
+    background-color: #1d1b1b;
 }
 
 .navbar__link_option>a {
@@ -411,17 +412,93 @@ body {
 }
 
 .section__services_button {
+    font-size: 18px;
     margin: 50px 0 0;
     box-sizing: border-box;
     background-color: transparent;
     border: 1px solid lightgreen;
-    padding: 10px 25px 10px 25px;
+    padding: 15px 25px 15px 25px;
     border-radius: 25px;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out, color .3s ease-in-out;
 }
 
 .section__services_button:hover {
+    background-color: #27AE60;
+    color: #fff;
+}
+
+/* Stats */
+
+.section__stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f0fff0;
+    color: black;
+    padding: 40px 0 60px;
+}
+
+.section__stats_title {
+    font-style: normal;
+    font-size: 30px;
+    font-weight: lighter;
+    color: #107038;
+}
+
+.section__stats_cards {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.section__stats_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 50px 0 50px;
+}
+
+.section__stats_card:not(:last-child) {
+    border-right: 1px solid #ccc;
+}
+
+.section__stats_card-number {
+    font-size: 35px;
+    font-weight: 900;
+    color: #27AE60;
+}
+
+.section__stats_card-unit {
+    font-size: 20px;
+    font-style: bold;
+    margin-top: 20px;
+}
+
+.section__stats_card-label {
+    font-size: 14px;
+    font-style: lighter;
+    margin-top: 25px;
+    color: #413b3b;
+}
+
+.section__stats_button {
+    width: 20%;
+    font-size: 18px;
+    margin: 50px 0 0;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 1px solid lightgreen;
+    padding: 15px 25px 15px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color .3s ease-in-out;
+}
+
+.section__stats_button:hover {
     background-color: #27AE60;
     color: #fff;
 }
