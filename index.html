@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./vendor/normalize.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
+    <link href="https://fonts.cdnfonts.com/css/nexa-bold" rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
     <nav class="navbar">
-        <img class="navbar__image" src="./images/placeholder_logo.jpg" alt="">
+        <img class="navbar__image" src="./images/placeholder_logo.png" alt="">
         <div class="navbar__links">
             <ul class="navbar__link" id="0">
                 <h3 class="navbar__link_title">Services</h3>
@@ -70,9 +71,27 @@
                     </li>
                 </div>
             </ul>
+            <a class="button navbar__button" href="#">Contact Us</a>
         </div>
     </nav>
 
+    <section class="section section_swiper section__swiper-video">
+        <video autoplay muted loop>
+            <source src="./images/placeholder__swiper.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="section__swiper-slide">
+            <div class="section__swiper-slide_content">
+                <h5 class="section__swiper-slide_subtitle" data-caption-animate="fadeInUp" data-caption-delay="100">Driving Success Together:
+                </h5>
+                <h1 class="section__swiper-slide_title" data-caption-animate="fadeInUp" data-caption-delay="200"">Your Nearshore Outsourcing<br> Technology Leader</h1>
+                <div class="button-wrap" data-caption-animate="fadeInUp" data-caption-delay="300"><a
+                    class="button" href="#">Get Started!</a></div>
+            </div>
+        </div>
+    </section>
+    
     <script src="js/index.js"></script>
 </body>
 
