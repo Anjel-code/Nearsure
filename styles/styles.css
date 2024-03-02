@@ -11,7 +11,7 @@ body {
 
 /*Navbar*/
 .navbar {
-    position: absolute;
+    position: fixed;
     display: flex;
     width: 1280px;
     margin: 0;
@@ -307,4 +307,97 @@ body {
 .section__swiper-slide_title, .section__swiper-slide_subtitle, .button-wrap {
     animation: slideUp 1.5s ease forwards;
     opacity: 0; /* Initially set opacity to 0 */
+}
+
+
+/* Services */
+
+.section__services {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 90px 0 100px;
+    text-align: center;
+}
+
+.section__services_title {
+    font-size: 40px;
+    color: #27AE60;
+}
+
+.section__services_subtitle {
+    font-size: 18px;
+    color: #4F4F4F;
+    line-height: 130%;
+}
+
+.section__services_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top:90px;
+}
+
+.section__services_card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 23%;
+    height: 370px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: start;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.section__services_card_icon {
+    width: 55px;
+    height: 55px;
+    stroke: #27AE60;
+    margin-bottom: 15px;
+}
+
+.section__services_card_title {
+    margin: 0 0 20px;
+    padding: 0;
+    font-size: 23px;
+}
+
+.section__services_card_paragraph {
+    margin: 0;
+    padding: 0;
+    color: #4F4F4F;
+    font-weight: lighter;
+}
+
+.section__services_card_button {
+    margin: auto 0 0 0;
+    background-color: transparent;
+    border: 1px solid lightgreen;
+    padding: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color .3s ease-in-out;
+}
+
+.section__services_card_button:hover {
+    background-color: lightgreen;
+    color: #fff;
+}
+
+.section__services_button {
+    margin: 50px 0 0;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 1px solid lightgreen;
+    padding: 10px 25px 10px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color .3s ease-in-out;
+}
+
+.section__services_button:hover {
+    background-color: lightgreen;
+    color: #fff;
 }
