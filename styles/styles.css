@@ -1,6 +1,7 @@
 /*Default*/
 body {
     font-family: 'Lato', sans-serif;
+    color: #FFFFFF;
 }
 
 /*Misc*/
@@ -9,11 +10,16 @@ body {
     opacity: 0;
 }
 
+.navbar__scrolled {
+    background-color: #2b2a2a;
+    color: #27AE60;
+}
+
 /*Navbar*/
 .navbar {
     position: fixed;
     display: flex;
-    width: 1280px;
+    width: 100%;
     margin: 0;
     left: 50%;
     /* Move the left edge of the child to the center horizontally */
@@ -21,8 +27,9 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 0 25px 0;
+    padding: 15px 25px 15px 0;
     z-index: 1000;
+    transition: all .5s ease-in-out;
 }
 
 .navbar__image {
@@ -50,8 +57,6 @@ body {
     position: relative;
     margin: 0;
     padding: 0;
-    /* color: #229954; */
-    color: #FFFFFF;
     cursor: pointer;
     padding: 15px 25px 15px 25px;
     font-size: 16px;
@@ -112,7 +117,7 @@ body {
     padding: 0 25px 25px 25px;
     flex-direction: column;
     text-align: center;
-    background-color: white;
+    background-color: #2b2a2a;
     border-top: 3px solid #27AE60;
     transition: all 0.2s ease-in-out;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
@@ -121,7 +126,7 @@ body {
 .navbar__link_option {
     width: 200px;
     padding: 15px;
-    border-bottom: 1px solid #f2f2f2;
+    border-bottom: 1px solid #050505;
     box-sizing: border-box;
     transition: background-color 0.4s ease-in-out;
 }
@@ -131,7 +136,7 @@ body {
 }
 
 .navbar__link_option:hover {
-    background-color: #f2f2f2;
+    background-color: #050505;
 }
 
 .navbar__link_option>a {
@@ -140,8 +145,25 @@ body {
 }
 
 .navbar__button {
+    background-image: linear-gradient(to right, #348F50 0%, #56B4D3  51%, #348F50  100%);
+    margin: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    display: block;
     padding: 10px 15px 10px 15px !important;
+    border-radius: 20px;
+    text-decoration: none;
 }
+
+.navbar__button:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+ 
 
 /*Section*/
 .section {
@@ -352,8 +374,8 @@ body {
 }
 
 .section__services_card_icon {
-    width: 55px;
-    height: 55px;
+    width: 60px;
+    height: 60px;
     stroke: #27AE60;
     margin-bottom: 15px;
 }
@@ -362,6 +384,7 @@ body {
     margin: 0 0 20px;
     padding: 0;
     font-size: 23px;
+    color: black;
 }
 
 .section__services_card_paragraph {
@@ -369,12 +392,13 @@ body {
     padding: 0;
     color: #4F4F4F;
     font-weight: lighter;
+    cursor: default;
 }
 
 .section__services_card_button {
     margin: auto 0 0 0;
     background-color: transparent;
-    border: 1px solid lightgreen;
+    border: 1px solid #27AE60;
     padding: 10px;
     border-radius: 25px;
     cursor: pointer;
@@ -382,7 +406,7 @@ body {
 }
 
 .section__services_card_button:hover {
-    background-color: lightgreen;
+    background-color: #27AE60;
     color: #fff;
 }
 
@@ -398,6 +422,6 @@ body {
 }
 
 .section__services_button:hover {
-    background-color: lightgreen;
+    background-color: #27AE60;
     color: #fff;
 }
