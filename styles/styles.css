@@ -710,3 +710,50 @@ body {
     color: black;
     font-size: 16px;
 }
+
+/* Contact */
+
+.section__contact {
+    padding-top: 54px;
+    padding-bottom: 50px;
+    background-image: url(../images/question.jpg);
+    background-position: bottom left;
+}
+
+.section__contact_container {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    justify-content: space-between;
+    font-family: 'Nexa';
+    font-weight: 600;
+}
+
+.section__contact_question {
+    font-size: 30px;
+    margin: 15px;
+}
+
+.section__contact_button {
+    background-image: linear-gradient(to right, #348F50 0%, #56B4D3  51%, #348F50  100%);
+    margin: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    display: block;
+    padding: 15px 45px 10px 45px !important;
+    border-radius: 20px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.section__contact_button:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+ 
+
