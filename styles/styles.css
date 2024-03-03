@@ -874,3 +874,60 @@ body {
     text-decoration: underline;
     cursor: pointer;
 }
+
+/* Opportunities */
+
+.section__opportunities {
+    background-image: url(../images/team.jpg);
+    padding: 120px 0 140px;
+    
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+    z-index: 0;
+}
+
+.section__opportunities_container {
+    position: relative;
+    z-index: 100;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.section__opportunities_title {
+    font-size: 32px;
+    margin: 10px 0 0 0;
+}
+
+.section__opportunities_subtitle {
+    font-size: 22px;
+    color: #4acf52;
+    margin: 0;
+}
+
+.section__opportunities_paragraph {
+    margin: 25px 0 0 0;
+    max-width: 45%;
+    font-size: 19px;
+}
+
+.section__opportunities_button {
+    background-color: transparent;
+    padding: 15px 30px 15px 30px;
+    color: white;
+    border: 1px solid #27AE60;
+    border-radius: 60px;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+}
+
+.section__opportunities_button:hover {
+    background-color: #27AE60;
+}
