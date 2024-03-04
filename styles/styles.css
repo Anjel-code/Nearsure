@@ -15,6 +15,44 @@ body {
     color: #27AE60;
 }
 
+.revealUp{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.revealUp.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.revealDown{
+    position: relative;
+    transform: translateY(-150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.revealDown.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.revealLeft{
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.revealLeft.active{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+
 /*Navbar*/
 .navbar {
     position: fixed;
@@ -936,7 +974,7 @@ body {
 /* Data */
 
 .section__data { 
-    padding: 150px 0 0 0;
+    padding: 120px 0 0 0;
     background-color: #f0fff0;
 }
 
@@ -1057,9 +1095,159 @@ body {
     color: #fff;
     border-radius: 20px;
     cursor: pointer;
-    transition: all .4s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 .section__data_form_submit:hover {
     background-color: darkgreen;
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: #107038;
+    padding: 50px 0 70px 0;
+}
+
+.footer__container {
+    max-width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 0 70px 0;
+    border-bottom: 2px solid white;
+}
+
+.footer__logo {
+    width: 10%;
+    height: 100%;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.footer__cards {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+}
+
+.footer__cards {
+    list-style-type: none;
+}
+
+.footer__card {
+    text-decoration: none;
+}
+
+.footer__card-media {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__card_title_social-media {
+    align-self: flex-end;
+}
+
+.footer__card_title {
+    margin: 0 0 20px 0;
+    font-size: 18px;
+}
+
+.footer__card_option {
+    margin: 10px 0 0 0;
+}
+
+.footer__card a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 14px;
+}
+
+.footer__card a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer__button {
+    background-image: linear-gradient(to right, #348F50 0%, #56B4D3  51%, #348F50  100%);
+    margin: 0 0 30px 0;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    display: block;
+    padding: 10px 15px 10px 15px !important;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.footer__card_list {
+    display: flex;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.footer__card_list_phone {
+    margin: 40px 0 0 0;
+}
+
+.footer__card_item {
+    list-style-type: none;
+    margin: 0 10px 0 0;
+}
+
+.footer__card_icon {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    filter: blur(1px);
+    transition: all .4s ease-out;
+}
+
+.footer__card_icon:hover {
+    cursor: pointer;
+    filter: blur(0);
+    filter: contrast(200%);
+}
+
+.footer__card_phone_icon {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+}
+
+.footer__card_number {
+    margin: auto 0 auto 15px;
+}
+
+.footer__card_number:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer__card_number:hover .footer__card_phone_icon {
+    filter: contrast(200%);
+}
+
+.footer__copyrights {
+    max-width: 60%;
+    margin: 30px auto 0;
+}
+
+.footer__copyrights_text {
+    text-align: center;
+    cursor: default;
+}
+
+.footer__copyrights_link {
+    color: #27AE60;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer__copyrights_link:hover {
+    text-decoration: underline;
 }
