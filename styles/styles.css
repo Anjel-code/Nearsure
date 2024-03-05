@@ -654,7 +654,7 @@ body {
     justify-content: space-around;
     gap: 1rem;
     min-width: 100%;
-    animation: loop 20s linear infinite;
+    animation: loop 40s linear infinite;
 }
 
 .section__clients_logos img {
