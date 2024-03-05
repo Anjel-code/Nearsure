@@ -32,6 +32,19 @@ body {
     opacity: 1;
 }
 
+.revealUp-On-Load {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.revealUp-On-Load.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
 .revealDown {
     position: relative;
     transform: translateY(-150px);
@@ -64,7 +77,14 @@ body {
     height: auto;
     filter: 
     drop-shadow(-2px -2px 0px #3e68ff) 
-    drop-shadow(2px -2px 0px #27AE60) 
+    drop-shadow(2px -2px 0px #27AE60);
+    stroke: white; /*Remove svg's border*/
+}
+
+.paragraph-active { /*Details in Mission.js*/
+    box-shadow: 12px 16px 6px rgba(0, 0, 0, 0.1) !important;
+    transform: scale(1.06) translateX(80px);
+    border: none;
 }
 
 /*Navbar*/
@@ -86,6 +106,7 @@ body {
 .navbar__logo_container {
     display: flex;
     align-items: center;
+    cursor: default;
 }
 
 .navbar__image {
@@ -1305,23 +1326,16 @@ body {
 
 
 /* ------------------------ mission.html ------------------------ */
-.wave-container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    background-image: url('../images/review1.jpg');
-}
 
-
+/* Wave */
 .section__wave {
     width: 100%;
-    height: 60vh;
+    height: 50vh;
     margin: 0;
     padding: 200px 0 100px 0;
     background-image: url(../images/mission.jpg);
     background-size: cover;
-    background-position: 0px -200px;
+    background-position: 0 -200px;
     background-repeat: no-repeat;
 }
 
@@ -1377,4 +1391,50 @@ body {
     color: #fff;
     text-decoration: none;
     cursor: pointer;
+}
+
+/* Mission */
+
+.section__mission {
+    height: 100%;
+    padding: 0 0 100px 0;
+    color: black;
+}
+
+.section__mission_container {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 60px 0 100px 40px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section__mission_title {
+    font-size: 40px;
+    color: #107038;
+    margin: 0;
+    text-align: center;
+}
+
+.section__mission_subtitle {
+    max-width: 35%;
+    margin: 20px auto 60px;
+    text-align: center;
+}
+
+.section__mission_paragraph {
+    width: 60%;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #333;
+    margin: 35px 0 0 0;
+    padding: 0 20px 20px;
+    box-shadow: 8px 10px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: all 0.5s ease-out;
+}
+
+.section__mission_paragraph span {
+    font-size: 35px;
+    font-weight: 500;
 }
