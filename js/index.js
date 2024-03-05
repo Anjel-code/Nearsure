@@ -1,6 +1,3 @@
-const cardNumber = document.querySelector('.footer__card_number');
-const cardPhoneIcon = document.querySelector('.footer__card_phone_icon');
-
 document.addEventListener("DOMContentLoaded", function() {
     var slides = document.querySelectorAll('.section__swiper-slide');
     var currentSlide = 0;
@@ -30,21 +27,3 @@ document.addEventListener("DOMContentLoaded", function() {
 
     startSlider();
 });
-
-
-function copyClipboard() {
-    let copyText = document.querySelector('.footer__card_number');
-
-    navigator.clipboard.writeText(copyText.textContent);
-    
-    alert("Phone number is copied: " + copyText.textContent);
-}
-
-cardNumber.addEventListener('mouseenter', () => {
-    cardPhoneIcon.style.filter = 'contrast(200%)';
-});
-
-cardNumber.addEventListener('mouseleave', () => {
-    cardPhoneIcon.style.filter = 'none';
-});
-
