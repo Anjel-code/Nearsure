@@ -509,11 +509,20 @@ body {
     padding: 10px;
     border-radius: 25px;
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out, color .3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .section__services_card_button:hover {
     background-color: #27AE60;
+}
+
+.section__services_card_button a {
+    text-decoration: none;
+    color: #000;
+    transition: color .3s ease-in-out;
+}
+
+.section__services_card_button:hover a {
     color: #fff;
 }
 
@@ -554,6 +563,11 @@ body {
     color: #107038;
 }
 
+.section__stats_subtitle {
+    margin: 0 0 10px 0;
+    font-weight: 400;
+}
+
 .section__stats_cards {
     width: 60%;
     display: flex;
@@ -566,6 +580,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 0 50px 0 50px;
+    text-align: center;
 }
 
 .section__stats_card:not(:last-child) {
@@ -614,7 +629,7 @@ body {
     max-width: 80%;
     margin: 0 auto;
     text-align: center;
-    padding: 60px 0 80px;
+    padding: 60px 0 120px;
     color: #000;
 }
 
@@ -648,22 +663,21 @@ body {
 
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-    margin-top: 40px;
+    margin: 70px 0 5px 0;
 }
 
 .section__clients_logos {
     flex-shrink: 0;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    gap: 1rem;
+    justify-content: space-evenly;
     min-width: 100%;
     animation: loop 40s linear infinite;
 }
 
 .section__clients_logos img {
     display: block;
-    margin-inline: 2rem;
+    max-width: 2.8%;
 }
 
 @keyframes loop {
@@ -1393,13 +1407,11 @@ body {
     cursor: pointer;
 }
 
-/* ------------------------ digital-playground.html ------------------------ */
-
 /* Techs */
 
 .section__techs {
     margin: 0;
-    padding: 40px 0 60px 0;
+    padding: 70px 0 140px 0;
 }
 
 .section__techs_title {
@@ -1445,6 +1457,157 @@ body {
     width: 14%;
     text-align: center;
 }
+
+/* ------------------------ digital-playground.html ------------------------ */
+
+/* Discover */
+
+.section__discover {
+    padding: 20px 0 60px 0;
+    margin: 0 auto;
+}
+
+.section__discover_title {
+    color: #107038;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.section__discover_subtitle {
+    color: black;
+    text-align: center;
+    margin: 20px 0 0 0;
+    font-weight: 400;
+}
+
+.section__discover_container {
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.section__discover_card {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section__discover_card_icon {
+    width: 70px;
+}
+
+.section__discover_card_title {
+    color: #107038;
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+
+.section__discover_card_paragraph {
+    color: #4F4F4F;
+    text-align: center;
+}
+
+/* Solutions */
+
+.section__solutions {
+    margin: 0;
+    padding: 50px 0 150px 0;
+}
+
+.section__solutions_headings {
+    max-width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.section__solutions_title {
+    text-align: center;
+    color: #107038;
+    font-size: 35px;
+    font-weight: 500;
+    margin: 5px 0 0 0;
+}
+
+.section__solutions_subtitle {
+    text-align: center;
+    color: #345aa5;
+    margin: 0;
+    font-size: 21px;
+}
+
+.section__solutions_paragraph {
+    max-width: 50%;
+    font-family: 'Nexa';
+    color: #4f4f4f;
+}
+
+.section__solutions_paragraph span{
+    font-weight: 900;
+    color: #107038;
+}
+
+.section__solutions_container {
+    max-width: 65%;
+    margin: 0 auto;
+    display: flex;
+    column-gap: 60px;
+    row-gap: 50px;
+    color: black;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+
+.section__solutions_card {
+    width: 26%;
+    padding: 15px 15px 30px 15px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 5px 10px 16px rgba(0, 0, 0, 0.1);
+    border: 1px solid #efefef;
+}
+
+.section__solutions_card_image {
+    border-radius: 15px;
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+}
+
+.section__solutions_card_title {
+    font-size: 25px;
+    font-weight: 900;
+    margin: 20px 0 0 0;
+}
+
+.section__solutions_card_paragraph {
+    font-family: 'Nexa';
+    font-size: 16px;
+    color: #4F4F4F;
+    margin: 30px 0 0 0;
+}
+
+.section__solutions_card_button {
+    background-color: transparent;
+    border: none;
+    color: #27AE60;
+    font-weight: 900;
+    margin: 20px 0 0 0;
+}
+
+.section__solutions_card_button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 
 
 
