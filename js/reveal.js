@@ -39,4 +39,6 @@ window.addEventListener('scroll', debounce(() => {
     reveal('Up');
     reveal('Down');
     reveal('Left');
+    reveal('Right');
+    reveal('Appear');
 }, 100));
