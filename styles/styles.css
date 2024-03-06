@@ -1556,11 +1556,11 @@ body {
     max-width: 65%;
     margin: 0 auto;
     display: flex;
-    column-gap: 60px;
     row-gap: 50px;
     color: black;
     margin-top: 100px;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .section__solutions_card {
