@@ -20,6 +20,9 @@ function reveal(direction) {
     let reveals = document.querySelectorAll(".reveal" + direction);
     let windowHeight = window.innerHeight;
     let elementVisible = 150;
+    if(direction == 'Up') {
+        elementVisible = 0;
+    }
 
     reveals.forEach(element => {
         let elementTop = element.getBoundingClientRect().top;
