@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
+    reveal('Zoom');
+    reveal('Wave');
     reveal('Up-On-Load');
 });
 
@@ -26,9 +28,14 @@ function reveal(direction) {
 
     reveals.forEach(element => {
         let elementTop = element.getBoundingClientRect().top;
+        if(direction == 'Zoom' || direction == 'Wave' || direction == 'Up-On-Load') {
+            elementTop = -999999;
+        }
+
         if (elementTop < windowHeight - elementVisible) {
             element.classList.add("active");
-        } else {
+        }
+        else {
             element.classList.remove("active");
         }
     });

@@ -44,7 +44,6 @@ body {
     opacity: 1;
 }
 
-
 .revealDown {
     position: relative;
     transform: translateY(-150px);
@@ -89,6 +88,26 @@ body {
 
 .revealAppear.active {
     opacity: 1;
+}
+
+.revealWave {
+    transform: translateY(175px);
+    transition: 1s all ease;
+}
+
+.revealWave.active {
+    transform: translateY(0);
+}
+
+.revealZoom {
+    transform: scale(.7);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.revealZoom.active {
+    opacity: 1;
+    transform: scale(1);
 }
 
 .wave-svg {
@@ -1587,11 +1606,11 @@ body {
     max-width: 65%;
     margin: 0 auto;
     display: flex;
-    row-gap: 50px;
+    gap: 50px;
     color: black;
     margin-top: 100px;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .section__solutions_card {
@@ -1639,8 +1658,276 @@ body {
     cursor: pointer;
 }
 
+/* Talent */
+
+.section__talent {
+    padding: 50px 0 100px 0;
+}
+
+.section__talent_title {
+    font-size: 40px;
+    color: #107038;
+    font-weight: 400;
+    text-align: center;
+}
+
+.section__talent_subtitle {
+    color: #615e5e;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+}
+
+.section__talent_container {
+    max-width: 40%;
+    margin: 80px auto;
+    padding: 60px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 50px;
+}
+
+.section__talent_card {
+    max-width: 36%;
+}
 
 
+.section__talent_card_icon {
+    width: 60px;
+}
+
+.section__talent_card_title {
+    color: #000;
+    font-size: 19px;
+    margin: 15px 0 0 0;
+}
+
+.section__talent_card_subtitle {
+    color: #27AE60;
+    font-size: 16px;
+    margin: 15px 0 0 0;
+}
+
+.section__talent_card_paragraph {
+    font-family: 'Nexa';
+    font-weight: 100;
+    margin: 20px 0 0 0;
+    color: #4F4F4F;
+}
+
+/* Eleviate */
+
+.section__eleviate {
+    padding: 100px 0 100px 0;
+    margin: 0;
+}
+
+.section__eleviate_title {
+    text-align: center;
+    color: #107038;
+    font-size: 37px;
+    font-weight: 500;
+}
+
+.section__eleviate_subtitle {
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.section__eleviate_container {
+    max-width: 65%;
+    display: flex;
+    margin: 60px auto 0;
+    gap: 60px;
+}
+
+
+.section__eleviate_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section__eleviate_card_icon {
+    width: 65px;
+}
+
+.section__eleviate_card_title {
+    font-size: 23px;
+    text-align: center;
+    color: #000;
+    margin: 30px 0 0 0;
+}
+
+.section__eleviate_card_paragraph {
+    font-size: 16px;
+    color: #4F4F4F;
+    text-align: center;
+    margin: 15px 0 0 0;
+}
+
+
+/* ------------------------ dreamit.html ------------------------ */
+
+/* Goto */
+.section__goto {
+    margin: 0;
+    padding: 100px 0 120px 0;
+}
+
+.section__goto_title {
+    font-size: 30px;
+    color: #107038;
+    text-align: center;
+}
+
+.section__goto_container {
+    max-width: 50%;
+    margin: 100px auto 0;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 60px;
+}
+
+.section__goto_card {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section__goto_card_icon {
+    width: 50px;
+    height: 50px;
+    padding: 0 !important;
+    margin: 0;
+}
+
+.section__goto_card_paragraph {
+    color: #4f4f4f;
+}
+
+.section__goto_card_button {
+    background-image: linear-gradient(to right, #348F50 0%, #56B4D3 51%, #348F50 100%);
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    display: block;
+    padding: 10px 20px 10px 20px !important;
+    border-radius: 20px;
+    text-decoration: none;
+    border: none;
+    font-size: 15px;
+    margin: 15px 0 0 0;
+}
+
+.section__goto_card_button:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.section__goto_card_button a {
+    color: white;
+    text-decoration: none;
+}
+
+/* ------------------------ supercharge-your-tech-team.html ------------------------ */
+
+/* section__where-to-start */
+
+.section__where-to-start {
+    padding: 150px 0 230px 0;
+    margin: 0;
+    background-color: #f8f8f8;
+}
+
+.section__where-to-start_headings {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.section__where-to-start_subtitle {
+    color: #345aa5;
+    margin: 0;
+    font-size: 21px;
+    text-align: start;
+}
+
+.section__where-to-start_title {
+    color: #107038;
+    font-size: 35px;
+    font-weight: 500;
+    margin: 5px 0 0 0;
+}
+
+.section__where-to-start_paragraph {
+    max-width: 50%;
+    font-family: 'Nexa';
+    color: #4f4f4f;
+}
+
+.section__where-to-start_container {
+    max-width: 60%;
+    margin: 110px auto 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section__where-to-start_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+}
+
+.section__where-to-start_card_icon {
+    width: 70px;
+}
+
+.section__where-to-start_card_paragraph {
+    font-family: 'Nexa';
+    font-weight: 100;
+    color: #4F4F4F;
+    text-align: center;
+    margin: 30px 0 0 0;
+}
+
+.section__where-to-start_button {
+    background-image: linear-gradient(to right, #348F50 0%, #56B4D3 51%, #348F50 100%);
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    display: block;
+    padding: 13px 60px 13px 60px !important;
+    border-radius: 25px;
+    text-decoration: none;
+    border: none;
+    font-size: 17px;
+    margin: 65px auto 0;
+}
+
+.section__where-to-start_button:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.section__where-to-start_button a {
+    text-decoration: none;
+    color: #fff;
+}
 
 /* ------------------------ mission.html ------------------------ */
 
