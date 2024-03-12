@@ -2753,7 +2753,7 @@ body {
     cursor: pointer;
 }
 
-/* ------------------------ job-offerings.html ------------------------ */
+/* ------------------------ referral-program.html ------------------------ */
 
 /* Job Application */
 .section__job-application_headings_modified {
@@ -2853,5 +2853,121 @@ body {
 .section__referral-opportunities_button:hover {
     background-color: #27AE60;
     color: #fff;
+    cursor: pointer;
+}
+
+/* ------------------------ contact-us.html ------------------------ */
+
+/* Contact Us */
+.section__contact-us {
+    padding: 150px 0 100px 0;
+}
+
+.section__contact-us_container {
+    max-width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section__contact-us_headings {
+    max-width: 45%; 
+}
+
+.section__contact-us_subtitle {
+    font-size: 20px;
+    color: #27AE60;
+}
+
+.section__contact-us_title {
+    font-size: 60px;
+    font-weight: 900;
+    color: #107038;
+    margin: 0;
+}
+
+.section__contact-us_paragraph {
+    font-size: 20px;
+    color: #666;
+    margin: 30px 0 0 0;
+}
+
+.section__contact-us_form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.section__contact-us_form_title {
+    font-size: 25px;
+    font-weight: 900;
+    color: #107038;
+    margin: 0;
+}
+
+.section__contact-us_form_name {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+    margin: 20px 0 0 0;
+}
+
+.section__contact-us_form_name_container {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.section__contact-us_form span {
+    font-size: 14px;
+    font-weight: 900;
+    color: #218149;
+    margin: 20px 0 0 0;
+}
+
+.section__contact-us_form input {
+    outline: none;
+    border: none;
+    margin: 20px 0 0 0;
+    padding: 10px 0 10px 10px;
+    box-sizing: border-box;
+    border-bottom: 2px solid #cae2cf;
+    color: #2c6845;
+}
+
+.section__contact-us_form_fieldset {
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.section__contact-us_form_radio {
+    color: #4f4f4f;
+}
+
+.section__contact-us_form_message {
+    outline: none;
+    border: none;
+    margin: 20px 0 0 0;
+    padding: 0 0 20px 10px;
+    border-bottom: 2px solid #cae2cf;
+}
+
+.section__contact-us_form_submit-button {
+    margin: 30px 0 0 0;
+    max-width: 25%;
+    color: #fff;
+    background-color: #33a161;
+    padding: 15px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: all .3s ease-out;
+}
+
+.section__contact-us_form_submit-button:hover {
+    color: #33a161;
+    background-color: #fff;
+    border: 1px solid #33a161;
     cursor: pointer;
 }
