@@ -2327,7 +2327,7 @@ body {
 
 .section__text_subtitle {
     font-size: 18px;
-    color: #3e68ff;
+    color: #27AE60;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -2653,7 +2653,7 @@ body {
 
 /* Job Application */
 .section__job-application {
-    padding: 50px 0 100px 0;
+    padding: 120px 0 150px 0;
 }
 
 .section__job-application_container {
