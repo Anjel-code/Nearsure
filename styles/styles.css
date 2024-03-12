@@ -1833,6 +1833,11 @@ body {
     text-align: center;
 }
 
+.section__discover_card_paragraph span {
+    font-weight: 900;
+    color: #107038;
+}
+
 /* Solutions */
 
 .section__solutions {
@@ -2745,5 +2750,108 @@ body {
     color: #33a161;
     background-color: #fff;
     border: 1px solid #33a161;
+    cursor: pointer;
+}
+
+/* ------------------------ job-offerings.html ------------------------ */
+
+/* Job Application */
+.section__job-application_headings_modified {
+    max-width: 40%;
+}
+
+.section__job-application_inspire {
+    font-size: 19px;
+    font-weight: 900;
+    color: #71d69b;
+    margin: 0;
+}
+
+.section__job-application_question {
+    font-size: 17px;
+    color: #4f4f4f;
+}
+
+.section__job-application_question span {
+    font-weight: 900;
+    color: #107038;
+    margin: 20px 0;
+}
+
+.section__job-application_title_modified {
+    font-size: 30px;
+    font-weight: 500;
+    color: #107038;
+    margin: 0;
+}
+
+.section__job-application_subtitle_modified {
+    font-size: 18px;
+    color: #4f4f4f;
+    margin: 30px 0 0 0;
+}
+
+.section__job-application_bonus {
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 1.2;
+    color: #4f4f4f;
+}
+
+.section__job-application_bonus span {
+    font-weight: 900;
+    color: #218149;
+}
+
+/* Referral Opportunities */
+
+.section__referral-opportunities {
+    padding: 50px 0 100px 0;
+}
+
+.section__referral-opportunities_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 45%;
+    margin: 0 auto;
+}
+
+.section__referral-opportunities_title {
+    font-size: 35px;
+    font-weight: 600;
+    color: #218149;
+    text-align: center;
+}
+
+.section__referral-opportunities_paragraph {
+    font-size: 19px;
+    color: #4f4f4f;
+    text-align: center;
+}
+
+.section__referral-opportunities_paragraph a {
+    text-decoration: none;
+    color: #27AE60;
+}
+
+.section__referral-opportunities_paragraph span {
+    font-weight: 900;
+    color: #107038;
+}
+
+.section__referral-opportunities_button {
+    margin: 60px 0 0;
+    font-size: 18px;
+    border: 1px solid #27AE60;
+    border-radius: 25px;
+    background-color: transparent;
+    padding: 10px 20px 10px 20px;
+    transition: all .3s ease-out;
+}
+
+.section__referral-opportunities_button:hover {
+    background-color: #27AE60;
+    color: #fff;
     cursor: pointer;
 }
