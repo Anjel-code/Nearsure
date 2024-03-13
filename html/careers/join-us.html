@@ -150,7 +150,7 @@
         </svg>
     </section>
 
-    <section class="section section__positions">
+    <!-- <section class="section section__positions">
         <div class="section__positions_headings">
             <h2 class="section__positions_title revealZoom">Explore Our Available Roles</h2>
             <p class="section__positions_paragraph revealZoom">Browse through our list of open positions. Click on each role to
@@ -280,7 +280,7 @@
                 </ul>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <section class="section section__job-application revealAppear" id="form">
         <div class="section__job-application_container">
@@ -303,7 +303,7 @@
                     </div>
                 </div>
                 <span>Email Address</span>
-                <input placeholder="JoshDoe@example.com" type="text" class="section__job-application_form_email"
+                <input placeholder="JoshDoe@example.com" type="email" class="section__job-application_form_email"
                     required>
                 <span>Country of Residence</span>
                 <select class="section__job-application_form_select" name="countries" id="countries" required>
@@ -350,24 +350,19 @@
                     <option value="ph">Philippines</option>
                     <option value="vn">Vietnam</option>
                 </select>
+                <span>State</span>
+                <input placeholder="Texas" type="text">
+                <span>City</span>
+                <input placeholder="Laredo" type="text" required>
+                <span>ZIP Code</span>
+                <input placeholder="99999" type="number" required>
+                <span>Phone Number</span>
+                <input placeholder="+1 111 111 1111" type="tel">
                 <span>Your LinkedIn Profile URL (Optional)</span>
                 <input placeholder="https://www.linkedin.com/your-profile"
                     class="section__job-application_form_linkedin" type="text">
-                <span>How did you discover us? (Talent)</span>
-                <select class="section__job-application_form_select" name="where_have_you_heard_about_us_"
-                    id="where_have_you_heard_about_us_" required>
-                    <option value="Please Select" selected disabled>Please Select</option>
-                    <option value="LinkedIn">LinkedIn</option>
-                    <option value="Social Media">Social Media</option>
-                    <option value="Press">Press</option>
-                    <option value="Events & Webinars">Events & Webinars</option>
-                    <option value="Job Portal">Job Portal</option>
-                    <option value="Referrals">Referrals</option>
-                    <option value="Google">Google</option>
-                    <option value="Newsletter">Newsletter</option>
-                    <option value="Direct contact from our team">Direct Contact From Our Team</option>
-                    <option value="Other">Other</option>
-                </select>
+                <span>Resume/CV</span>
+                <input type="file" required>
                 <button type="submit" class="section__job-application_form_submit-button">Apply Now</button>
             </form>
         </div>
