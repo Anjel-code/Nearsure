@@ -450,16 +450,16 @@
         </div>
     </section>
 
-    <section class="section section__data" id="form">
+    <section class="section section__data" id="form" action="./php/form-handler.php" method="post" novalidate>
         <div class="section__data_container">
             <form action="submit" class="section__data_form revealUp">
                 <h2 class="section__data_title">Get In Touch</h2>
                 <p class="section__data_subtitle">Are you ready to start your<br> custom software development project?</p>
-                <input type="text" placeholder="Name" class="section__data_form_name" required>
-                <input type="email" placeholder="Work Email" class="section__data_form_email" required>
-                <input type="text" placeholder="Company Name" class="section__data_form_company-name" required>
+                <input type="text" placeholder="Name" name="name" class="section__data_form_name" required>
+                <input type="email" placeholder="Work Email" name="email" class="section__data_form_email" required>
+                <input type="text" placeholder="Company Name" name="company-name" class="section__data_form_company-name" required>
                 <h3 class="section__data_form_text">Team size</h3>
-                <fieldset class="section__data_form_fieldset">
+                <fieldset class="section__data_form_fieldset" name="team-size">
                     <div class="section__data_form_radio" id="small" value="small">
                         <input type="radio" name="team_size">
                         <label for="small">1-5</label>
