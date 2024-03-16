@@ -199,7 +199,8 @@ body {
 }
 
 .paragraph-active {
-    /*DetailsinMission.js*/box-shadow: 12px 16px 6px rgba(0, 0, 0, 0.1) !important;
+    /*DetailsinMission.js*/
+    box-shadow: 12px 16px 6px rgba(0, 0, 0, 0.1) !important;
     transform: scale(1.06) translateX(80px);
     border: none;
     -webkit-transform: scale(1.06) translateX(80px);
@@ -217,42 +218,49 @@ body {
 }
 
 .ham {
-  position: relative;
-  z-index: 999;
-  cursor: pointer;
-  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(151deg) brightness(103%) contrast(104%);
-  -webkit-tap-highlight-color: transparent;
-  transition: transform 400ms;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(151deg) brightness(103%) contrast(104%);
+    position: relative;
+    z-index: 999;
+    cursor: pointer;
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(151deg) brightness(103%) contrast(104%);
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(151deg) brightness(103%) contrast(104%);
 }
+
 .hamRotate.active {
-  transform: rotate(45deg);
+    transform: rotate(45deg);
 }
+
 .hamRotate180.active {
-  transform: rotate(180deg);
+    transform: rotate(180deg);
 }
+
 .line {
-  fill:none;
-  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-  stroke:#000;
-  stroke-width:5.5;
-  stroke-linecap:round;
+    fill: none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: #000;
+    stroke-width: 5.5;
+    stroke-linecap: round;
 }
+
 .ham1 .top {
-  stroke-dasharray: 40 139;
+    stroke-dasharray: 40 139;
 }
+
 .ham1 .bottom {
-  stroke-dasharray: 40 180;
+    stroke-dasharray: 40 180;
 }
+
 .ham1.active .top {
-  stroke-dashoffset: -98px;
+    stroke-dashoffset: -98px;
 }
+
 .ham1.active .bottom {
-  stroke-dashoffset: -138px;
+    stroke-dashoffset: -138px;
 }
 
 /*Navbar*/
@@ -522,7 +530,7 @@ body {
         filter: brightness(0) invert(1);
         -webkit-filter: brightness(0) invert(1);
         z-index: 9999;
-}
+    }
 
     .navbar__links-mobile_container {
         position: absolute;
@@ -538,7 +546,7 @@ body {
         -moz-transition: all 0.2s ease-in-out;
         -ms-transition: all 0.2s ease-in-out;
         -o-transition: all 0.2s ease-in-out;
-}
+    }
 
     .navbar__links-mobile_lists {
         max-width: 80%;
@@ -593,7 +601,7 @@ body {
 
 @media screen and (max-width: 600px) {
     .navbar__links-mobile_lists_button {
-        margin: 20px 20px 0 0 ;
+        margin: 20px 20px 0 0;
     }
 }
 
@@ -609,6 +617,7 @@ body {
 
 /*Section*/
 .section {
+    overflow: hidden;
     position: relative;
 }
 
@@ -2750,14 +2759,13 @@ body {
     background-position: 0 0;
 }
 
-@media screen and (min-width: 1400px)
-{
+@media screen and (min-width: 1400px) {
     .section__wave_company-value {
         background-position: 0px -370px;
     }
 
     .section__wave_job-offerings {
-         background-position: 0px -370px;
+        background-position: 0px -370px;
     }
 
     .section__wave_join-us {
@@ -2918,7 +2926,8 @@ body {
     .section__techs_top-set {
         flex-wrap: wrap;
         justify-content: center;
-        column-gap: 15px;
+        -moz-column-gap: 15px;
+             column-gap: 15px;
         row-gap: 30px;
     }
 
@@ -3078,7 +3087,8 @@ body {
         flex-wrap: wrap;
         justify-content: center;
         row-gap: 30px;
-        column-gap: 40px;
+        -moz-column-gap: 40px;
+             column-gap: 40px;
     }
 
     .section__discover_card {
@@ -3214,7 +3224,8 @@ body {
     }
 
     .section__solutions_container {
-        column-gap: 20px;
+        -moz-column-gap: 20px;
+             column-gap: 20px;
         max-width: 80%;
     }
 
@@ -3481,7 +3492,8 @@ body {
 
     .section__eleviate_container {
         max-width: 75%;
-        column-gap: 40px;
+        -moz-column-gap: 40px;
+             column-gap: 40px;
     }
 
     .section__eleviate_card_icon {
@@ -3500,7 +3512,8 @@ body {
 @media screen and (max-width: 1024px) {
     .section__eleviate_container {
         max-width: 90%;
-        column-gap: 20px;
+        -moz-column-gap: 20px;
+             column-gap: 20px;
     }
 
     .section__eleviate_card_icon {
@@ -3685,7 +3698,8 @@ body {
         justify-content: space-between;
         flex-wrap: wrap;
         row-gap: 40px;
-        column-gap: 0;
+        -moz-column-gap: 0;
+             column-gap: 0;
     }
 
     .section__goto_card {
@@ -3710,7 +3724,7 @@ body {
         width: 70%;
     }
 
-    
+
 }
 
 /* ------------------------ supercharge-your-tech-team.html ------------------------ */
@@ -3850,7 +3864,7 @@ body {
     }
 }
 
-@media screen and (max-width: 800px)  {
+@media screen and (max-width: 800px) {
     .section__where-to-start_headings {
         display: flex;
         flex-direction: column;
@@ -3877,7 +3891,7 @@ body {
         max-width: 85%;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 40px; 
+        gap: 40px;
     }
 
     .section__where-to-start_card {
@@ -4018,7 +4032,7 @@ body {
     .section__vision_card_paragraph {
         font-size: 14px;
     }
-    
+
     .section__vision_card_paragraph span {
         font-size: 18px;
     }
@@ -4038,7 +4052,7 @@ body {
         -moz-border-radius: 20px;
         -ms-border-radius: 20px;
         -o-border-radius: 20px;
-}
+    }
 
     .section__vision_card_title {
         text-align: center;
@@ -4590,7 +4604,7 @@ body {
     .section__talent-pool_container {
         max-width: 90%;
     }
-    
+
     .section__talent-pool_stack_title {
         font-size: 25px;
     }
@@ -4796,10 +4810,10 @@ body {
         align-items: center;
     }
 
-    .section__community_headings  {
+    .section__community_headings {
         width: 95%;
     }
-    
+
     .section__community_title {
         text-align: center;
         font-size: 30px;
@@ -5073,7 +5087,7 @@ body {
     .section__job-application_title {
         text-align: center;
     }
-    
+
     .section__job-application_subtitle {
         text-align: center;
     }
@@ -5464,9 +5478,7 @@ body {
         font-size: 25px;
     }
 
-    .section__contact-us_paragraph {
-
-    }
+    .section__contact-us_paragraph {}
 }
 
 @media screen and (max-width: 800px) {
