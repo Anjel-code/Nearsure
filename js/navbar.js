@@ -4,10 +4,9 @@ let navbar__link_options = navbar.querySelectorAll('.navbar__link_options');
 let navbar__link_option = navbar.querySelectorAll('.navbar__link_option');
 let navbar__link_id = -1;
 let navbar__link_mobile = navbar.querySelector('.navbar__links-mobile');
-let navbar__link_mobile_button = navbar__link_mobile.querySelector('.navbar__links-mobile_icon');
+let navbar__link_mobile_button = navbar__link_mobile.querySelector('.ham');
 let navbar__link_mobile_container = navbar__link_mobile.querySelector('.navbar__links-mobile_container');
 let navbar__link_mobile_options = navbar__link_mobile.querySelectorAll('.navbar__links-mobile_option');
-let navbar__links_mobile_lists_button = navbar__link_mobile.querySelector('.navbar__links-mobile_lists_button');
 
 window.addEventListener('scroll', function() {
     var navbar = document.querySelector('.navbar');
@@ -50,18 +49,11 @@ navbar__link.forEach(element => {
 });
 
 navbar__link_mobile_button.addEventListener('click', () => {
-    navbar__link_mobile_container.classList.remove('antimatter');
+    navbar__link_mobile_container.classList.toggle('hidden');
 });
 
-navbar__links_mobile_lists_button.addEventListener('click', () => {
-    navbar__link_mobile_container.classList.add('antimatter');
-})
-
-
-//finish
 navbar__link_mobile_options.forEach(element => {
     element.addEventListener('click', () => {
-        console.log(element)
         window.location.href = `https://${element.getElementsByTagName('a')[0].getAttribute("href")}`;
     });
 });
