@@ -68,7 +68,7 @@
                         <a href="../help/contact-us.html">Support</a>
                     </li>
                     <li class="navbar__link_option">
-                        <a href="#">Forum</a>
+                        <a href="../help/forum.html">Forum</a>
                     </li>
                 </div>
             </ul>
@@ -126,8 +126,8 @@
                         <li class="navbar__links-mobile_option" onclick="window.location.href='../help/contact-us.html'">
                             <a href="../help/contact-us.html">Support</a>
                         </li>
-                        <li class="navbar__links-mobile_option">
-                            <a href="#">Forum</a>
+                        <li class="navbar__links-mobile_option" onclick="window.location.href='../help/forum.html'">
+                            <a href="../help/forum.html">Forum</a>
                         </li>
                     </ul>
                 </div>
@@ -296,16 +296,16 @@
                 <div class="section__job-application_form_name">
                     <div class="section__job-application_form_name_container">
                         <span>First Name</span>
-                        <input placeholder="Joshua" type="text" class="section__job-application_form__first-name"
+                        <input type="text" class="section__job-application_form__first-name"
                             required>
                     </div>
                     <div class="section__job-application_form_name_container">
                         <span>Last Name</span>
-                        <input placeholder="Doe" type="text" class="section__job-application_form_last-name" required>
+                        <input type="text" class="section__job-application_form_last-name" required>
                     </div>
                 </div>
                 <span>Email Address</span>
-                <input placeholder="JoshDoe@example.com" type="email" class="section__job-application_form_email"
+                <input type="email" class="section__job-application_form_email"
                     required>
                 <span>Country of Residence</span>
                 <select class="section__job-application_form_select" name="countries" id="countries" required>
@@ -353,19 +353,18 @@
                     <option value="vn">Vietnam</option>
                 </select>
                 <span>State</span>
-                <input placeholder="Texas" type="text">
+                <input type="text">
                 <span>City</span>
-                <input placeholder="Laredo" type="text" required>
+                <input type="text" required>
                 <span>ZIP Code</span>
-                <input placeholder="99999" type="number" required>
+                <input type="number" required>
                 <span>Phone Number</span>
-                <input placeholder="+1 111 111 1111" type="tel">
+                <input type="tel">
                 <span>Your LinkedIn Profile URL (Optional)</span>
-                <input placeholder="https://www.linkedin.com/your-profile"
-                    class="section__job-application_form_linkedin" type="text">
+                <input class="section__job-application_form_linkedin" type="text">
                 <span>Resume/CV (File Types: pdf, doc, docx, txt, rtf)</span>
                 <input type="file" accept=".pdf,.doc,.docx,.txt,.rtf" required>
-                <button type="submit" class="section__job-application_form_submit-button">Apply Now</button>
+                <button type="submit" class="section__job-application_form_submit-button">Apply</button>
             </form>
         </div>
     </section>
